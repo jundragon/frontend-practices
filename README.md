@@ -1,5 +1,4 @@
 # frontend-practices
 
 ## Nav-bar
-https://jundragon.github.io/frontend-practices/nav-bar/index.html
-
+<a href="https://jundragon.github.io/frontend-practices/nav-bar/index.html" target="_blank">nav-bar demo</a>
