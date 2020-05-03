@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="youtube-style.css" />
     <script
       src="https://kit.fontawesome.com/b15dfa3d58.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +20,7 @@
     <header>
       <div class="logo">
         <i class="fab fa-youtube"></i>
-        <span class="title">Youtube</span>
+        <span class="title">Youtube-clone</span>
       </div>
       <div class="icons">
         <i class="fas fa-search"></i>
@@ -27,98 +33,103 @@
       <video controls src="resource/Love.mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-      <!-- Metadata -->
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#Love</li>
-          <li>#You</li>
-          <li>#Jundragon</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title">
-            Clone Coding: Youtube Website
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <div class="views">
+    <!-- Video Info & Up Next -->
+    <div class="infoAndUpNext">
+      <!-- Video info -->
+      <section class="info">
+        <!-- Metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#Love</li>
+            <li>#You</li>
+            <li>#Jundragon</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              Clone Coding: Youtube Website 유튜브 모바일 웹사이트 따라 만들기 |
+              프론트엔드 개발자 입문편: HTML, CSS, JavaScript 드림코딩과
+              함께하는 프론트엔드 실전 입문편
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
           <span class="views">1M views 1 months ago</span>
         </div>
-      </div>
-      <!-- Actions -->
-      <div class="actions">
-        <li>
-          <button><i class="fas fa-thumbs-up"></i><span>1K</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-share"></i><span>Share</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i><span>Save</span></button>
-        </li>
-        <li>
-          <button>
-            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
-          </button>
-        </li>
-      </div>
-      <!-- Channel Description -->
-      <div class="channel">
-        <div class="metadata">
-          <img src="resource/profile.jpg" alt="" />
-          <div class="info">
-            <span class="name">준드래곤</span>
-            <span class="subscribers">1M subscribers</span>
-          </div>
+        <!-- Actions -->
+        <div class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+            </button>
+          </li>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
+        <!-- Channel Description -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="resource/profile.jpg" alt="" />
+            <div class="info">
+              <span class="name">준드래곤</span>
+              <span class="subscribers">1M subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
 
-    <!--  -->
-    <section class="UpNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <img src="resource/IU.jpg" alt="" />
-          <div class="info">
-            <span class="title">아이유</span>
-            <span class="name">아이유채널</span>
-            <span class="views">88K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="resource/dog.jpg" alt="" />
-          <div class="info">
-            <span class="title">댕댕이</span>
-            <span class="name">댕댕이채널</span>
-            <span class="views">1M views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-        <li class="item">
-          <img src="resource/panda.jpg" alt="" />
-          <div class="info">
-            <span class="title">팬더</span>
-            <span class="name">팬더채널</span>
-            <span class="views">30K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-      </ul>
-    </section>
+      <!-- Up Next -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="resource/IU.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >아이유 : 참이슬 취업 성공, 1일 1소주 실천</span
+              >
+              <span class="name">아이유채널</span>
+              <span class="views">88K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="resource/dog.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >댕댕이 : 댕무룩, 주인 눈치 살피는 댕댕이의 삶</span
+              >
+              <span class="name">댕댕이채널</span>
+              <span class="views">1M views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="resource/panda.jpg" alt="" /></div>
+            <div class="itemInfo">
+              <span class="title"
+                >팬더: 나뭇가지 사이에 머리가 낀 팬더, 아... 답답해</span
+              >
+              <span class="name">팬더채널</span>
+              <span class="views">30K views</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
